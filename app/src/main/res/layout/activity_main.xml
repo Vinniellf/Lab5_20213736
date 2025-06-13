@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Saludo dinámico -->
+    <TextView
+        android:id="@+id/tvSaludo"
+        style="@style/TextAppearance.Material3.TitleLarge"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="24dp"/>
+
+    <!-- Mensaje motivacional -->
+    <TextView
+        android:id="@+id/tvMensaje"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tvSaludo"
+        app:layout_constraintTop_toBottomOf="@id/tvSaludo"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Imagen personal (tap para cambiar) -->
+    <ImageView
+        android:id="@+id/ivFoto"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_person_24"   <!-- placeholder -->
+    android:contentDescription="@string/foto_personal"
+    android:background="@drawable/bg_image_round"
+    android:clickable="true"
+    android:focusable="true"
+    app:layout_constraintTop_toBottomOf="@id/tvMensaje"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="24dp"/>
+
+    <!-- Botón Ver mis hábitos -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnHabitos"
+        style="@style/Widget.Material3.Button.Filled"
+        android:text="Ver mis hábitos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ivFoto"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Botón Configuraciones -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnConfig"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:text="Configuraciones"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnHabitos"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
