@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AppLab5</string>
+    <string name="saludo">¡Hola, %1$s!</string>
+    <string name="btn_habitos">Ver mis hábitos</string>
+    <string name="btn_settings">Configuraciones</string>
+    <string name="btn_hora">Elegir hora de recordatorio</string>
+    <string name="lbl_hora">Recordar a las %1$02d:00 h</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="hint_nombre">Tu nombre</string>
+    <string name="hint_msg">Mensaje motivacional</string>
+    <string name="default_msg">¡Sigue adelante!</string>
+    <string name="pref_name">prefs_habitos</string>
+</resources>

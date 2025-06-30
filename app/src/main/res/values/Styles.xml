@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Estilo para formulario-->
+    <style name="EstiloFormulario" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/md_theme_primary</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="hintTextColor">@color/md_theme_primary</item>
+        <item name="android:textColorHint">@color/md_theme_primary</item>
+        <item name="android:textColor">@color/md_theme_primary</item>
+    </style>
+
+
+    <!-- Reside en el paquete de Material3, solo para referencia -->
+    <style name="pene" parent="Widget.Material3.Button">
+        <!-- Background tonal -->
+        <item name="android:backgroundTint">@color/md_theme_errorContainer</item>
+        <!-- Color del icono -->
+        <item name="iconTint">@color/md_theme_onErrorContainer</item>
+
+        <!-- Shape, padding, ripple, etc. heredados del padre -->
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+</resources>
